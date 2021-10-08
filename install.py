@@ -2,6 +2,11 @@ import os
 
 os.system("echo Setting up dotfiles...")
 
+print("Cleaning up...")
+os.system("rm -rfvd ohmzsh")
+os.system("rm -rfvd zsh-syntax-hightlighting")
+os.system("rm -rfvd Vundle.vim")
+
 os.system("echo Cloning Oh my zsh...")
 os.system("git clone https://github.com/ohmyzsh/ohmyzsh.git")
 os.system("mv ohmyzsh .oh-my-zsh")
