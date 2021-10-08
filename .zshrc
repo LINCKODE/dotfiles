@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/home/linckode/.oh-my-zsh"
+user=$(whoami)
+export ZSH="/home/$user/.oh-my-zsh"
 
 #ZSH_THEME="agnoster"
 #ZSH_THEME="gnzh"
@@ -64,5 +65,5 @@ lfcd () {
     fi
 }
 bindkey -s '^o' 'lfcd\n'
-source /home/linckode/.zshfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/$user/.zshfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
