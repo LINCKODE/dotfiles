@@ -19,5 +19,8 @@ os.system("echo Zsh syntax highlighting done.")
 os.system("cp -r .zshfiles ~/")
 os.system("echo zshfiles done.")
 
+os.system("cp -r .vim ~/")
+os.system("cp -r .vimrc ~/")
+os.system("Vim done.")
 
 os.system("echo Done! You can start zsh now.")
