@@ -27,7 +27,7 @@ os.system("echo Zsh syntax highlighting done.")
 os.system("cp -r .zshfiles ~/")
 os.system("echo zshfiles done.")
 
-os.system("mkdir .vim")
+os.system("mkdir -p .vim/bundle")
 os.system("echo Cloning Vundle...")
 os.system("git clone https://github.com/VundleVim/Vundle.vim.git")
 os.system("mv Vundle.vim .vim/bundle/Vundle.vim")
