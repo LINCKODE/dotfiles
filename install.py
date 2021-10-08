@@ -3,7 +3,7 @@ import os
 os.system("echo Setting up dotfiles...")
 
 os.system("echo Cloning Oh my zsh...")
-os.system("git clone 'https://github.com/ohmyzsh/ohmyzsh.git'")
+os.system("git clone https://github.com/ohmyzsh/ohmyzsh.git")
 os.system("mv ohmyzsh .oh-my-zsh")
 os.system("mv .oh-my-zsh ~/")
 os.system("echo Oh my zsh done.")
@@ -19,8 +19,11 @@ os.system("echo Zsh syntax highlighting done.")
 os.system("cp -r .zshfiles ~/")
 os.system("echo zshfiles done.")
 
+os.system("echo Cloning Vundle...")
+os.system("git clone https://github.com/VundleVim/Vundle.vim.git")
+os.system("mv Vundle.vim .vim/bundle")
 os.system("cp -r .vim ~/")
 os.system("cp -r .vimrc ~/")
-os.system("Vim done.")
+os.system("echo Vim done.")
 
 os.system("echo Done! You can start zsh now.")
