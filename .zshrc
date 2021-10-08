@@ -20,7 +20,6 @@ plugins=(
 	sudo
 	systemd
 	themes
-	zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
