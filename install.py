@@ -2,10 +2,7 @@ import os
 
 os.system("echo Setting up dotfiles...")
 
-print("Cleaning up...")
-os.system("rm -rfvd ohmzsh")
-os.system("rm -rfvd zsh-syntax-hightlighting")
-os.system("rm -rfvd Vundle.vim")
+cleanup()
 
 os.system("echo Cloning Oh my zsh...")
 os.system("git clone https://github.com/ohmyzsh/ohmyzsh.git")
@@ -32,4 +29,12 @@ os.system("cp -r .vim ~/")
 os.system("cp -r .vimrc ~/")
 os.system("echo Vim done.")
 
+cleanup()
+
 os.system("echo Done! You can start zsh now.")
+
+def cleanup():
+    print("Performing cleanup...")
+    os.system("rm -rfvd ohmzsh")
+    os.system("rm -rfvd zsh-syntax-hightlighting")
+    os.system("rm -rfvd Vundle.vim")
