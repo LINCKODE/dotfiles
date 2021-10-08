@@ -1,5 +1,13 @@
 import os
 
+
+def cleanup():
+    print("Performing cleanup...")
+    os.system("rm -rfvd ohmzsh")
+    os.system("rm -rfvd zsh-syntax-hightlighting")
+    os.system("rm -rfvd Vundle.vim")
+
+
 os.system("echo Setting up dotfiles...")
 
 cleanup()
@@ -32,9 +40,3 @@ os.system("echo Vim done.")
 cleanup()
 
 os.system("echo Done! You can start zsh now.")
-
-def cleanup():
-    print("Performing cleanup...")
-    os.system("rm -rfvd ohmzsh")
-    os.system("rm -rfvd zsh-syntax-hightlighting")
-    os.system("rm -rfvd Vundle.vim")
