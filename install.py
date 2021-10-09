@@ -1,6 +1,5 @@
 import os
 
-
 def cleanup():
     print("Performing cleanup...")
     os.system("rm -rfvd ohmzsh/ && rm -rfvd zsh-syntax-hightlighting/ && rm -rfvd Vundle.vim")
